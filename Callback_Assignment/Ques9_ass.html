@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ques9 Ass</title>
+</head>
+<body>
+    
+
+    <!-- js Start -->
+
+    <script>
+        fetch("https://jsonplaceholder.typicode.com/posts/123456789").then(
+            (response) =>{
+            if(!response.ok){
+                console.log("Server is not response and Network response is not OK!! pls try again");
+            }else{
+                return response.json()
+            }
+        })
+    </script>
+</body>
+</html>
